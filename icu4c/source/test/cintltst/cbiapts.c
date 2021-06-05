@@ -378,7 +378,7 @@ static void TestBreakIteratorCAPI()
 static void TestBreakIteratorSafeClone(void)
 {
     UChar text[51];     /* Keep this odd to test for 64-bit memory alignment */
-                        /*  NOTE:  This doesn't reliably force mis-alignment of following items. */
+                        /*  NOTE:  This doesn't reliably force misalignment of following items. */
     uint8_t buffer [CLONETEST_ITERATOR_COUNT] [U_BRK_SAFECLONE_BUFFERSIZE];
     int32_t bufferSize = U_BRK_SAFECLONE_BUFFERSIZE;
 
@@ -702,7 +702,7 @@ static void TestBreakIteratorRules() {
                     pos = ubrk_first(bi);
                     do {
                         if (pos2 != pos) {
-                            log_err("FAIL: interator from ubrk_openBinaryRules does not match original, get pos = %d instead of %d", pos2, pos);
+                            log_err("FAIL: iterator from ubrk_openBinaryRules does not match original, get pos = %d instead of %d", pos2, pos);
                         }
                         pos2 = ubrk_next(bi2);
                         pos = ubrk_next(bi);
@@ -751,7 +751,7 @@ static void TestBreakIteratorRuleError() {
 
 
 /*
-*   TestsBreakIteratorStatusVals()   Test the ubrk_getRuleStatusVec() funciton
+*   TestsBreakIteratorStatusVals()   Test the ubrk_getRuleStatusVec() function
 */
 static void TestBreakIteratorStatusVec() {
     #define RULE_STRING_LENGTH 200

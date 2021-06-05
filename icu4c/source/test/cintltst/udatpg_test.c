@@ -548,7 +548,7 @@ static void TestGetDefaultHourCycle() {
         } else {
             UDateFormatHourCycle actual = udatpg_getDefaultHourCycle(dtpgen, &status);
             if (U_FAILURE(status) || testDataPtr->expected != actual) {
-                log_err("ERROR dtpgen locale %s udatpg_getDefaultHourCycle expecte to get %d but get %d\n",
+                log_err("ERROR dtpgen locale %s udatpg_getDefaultHourCycle expected to get %d but get %d\n",
                         testDataPtr->locale, testDataPtr->expected, actual);
             }
             udatpg_close(dtpgen);

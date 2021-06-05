@@ -673,17 +673,17 @@ free(result);
     unum_getTextAttribute(cur_fr, UNUM_NEGATIVE_SUFFIX, temp, resultlength, &status);
     if(U_FAILURE(status))
     {
-        log_err("Failure in gettting the Text attributes of number format: %s\n", myErrorName(status));
+        log_err("Failure in getting the Text attributes of number format: %s\n", myErrorName(status));
     }
     unum_setTextAttribute(cur_def, UNUM_NEGATIVE_SUFFIX, temp, u_strlen(temp), &status);
     if(U_FAILURE(status))
     {
-        log_err("Failure in gettting the Text attributes of number format: %s\n", myErrorName(status));
+        log_err("Failure in getting the Text attributes of number format: %s\n", myErrorName(status));
     }
     unum_getTextAttribute(cur_def, UNUM_NEGATIVE_SUFFIX, suffix, resultlength, &status);
     if(U_FAILURE(status))
     {
-        log_err("Failure in gettting the Text attributes of number format: %s\n", myErrorName(status));
+        log_err("Failure in getting the Text attributes of number format: %s\n", myErrorName(status));
     }
     if(u_strcmp(suffix,temp)!=0)
         log_err("Fail:Error in setTextAttribute or getTextAttribute in setting and getting suffix\n");

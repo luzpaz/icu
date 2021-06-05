@@ -1342,12 +1342,12 @@ DateFormatTest::TestLocaleDateFormat() // Bug 495
     }
 
     dfFrench->format(testDate, out);
-    logln((UnicodeString)"Date Formated with French Locale " + out);
+    logln((UnicodeString)"Date Formatted with French Locale " + out);
     if (!(out == expectedFRENCH))
         errln((UnicodeString)"FAIL: Expected " + expectedFRENCH);
     out.truncate(0);
     dfUS->format(testDate, out);
-    logln((UnicodeString)"Date Formated with US Locale " + out);
+    logln((UnicodeString)"Date Formatted with US Locale " + out);
     if (!(out == expectedUS))
         errln((UnicodeString)"FAIL: Expected " + expectedUS);
     delete dfUS;
@@ -4836,7 +4836,7 @@ void DateFormatTest::TestNumberFormatOverride() {
             assertSuccess("adoptNumberFormat singleOverrideNF", status);
 
             fmt->adoptNumberFormat(overrideNF);
-        } else if (fields == (UnicodeString) "Mo"){ // o is invlid field
+        } else if (fields == (UnicodeString) "Mo"){ // o is invalid field
             fmt->adoptNumberFormat(fields, overrideNF, status);
             if(status == U_INVALID_FORMAT_ERROR) {
                 status = U_ZERO_ERROR;
