@@ -554,7 +554,7 @@ public:
     /**
      * Sets timezone strings. These strings are stored in a 2-dimensional array.
      * <p><b>Note:</b> SimpleDateFormat no longer use the zone strings stored in
-     * a DateFormatSymbols. Therefore, the time zone strings set by this mthod
+     * a DateFormatSymbols. Therefore, the time zone strings set by this method
      * have no effects in an instance of SimpleDateFormat for formatting time
      * zones.
      * @param strings       The timezone strings as a 2-d array to be copied. (not adopted; caller retains ownership)
@@ -926,7 +926,7 @@ private:
      * Copy or alias an array in another object, as appropriate.
      *
      * @param dstArray    the copy destination array.
-     * @param dstCount    fill in with the lenth of 'dstArray'.
+     * @param dstCount    fill in with the length of 'dstArray'.
      * @param srcArray    the source array to be copied.
      * @param srcCount    the length of items to be copied from the 'srcArray'.
      */
