@@ -28,7 +28,7 @@
 
 U_NAMESPACE_BEGIN
 
-// Uncomment the follwoing #define to debug.
+// Uncomment the following #define to debug.
 // #define LSTM_DEBUG 1
 // #define LSTM_VECTORIZER_DEBUG 1
 

@@ -119,7 +119,7 @@ enum {
 };
 
 typedef struct SCSUData {
-    /* dynamic window offsets, intitialize to default values from initialDynamicOffsets */
+    /* dynamic window offsets, inititialize to default values from initialDynamicOffsets */
     uint32_t toUDynamicOffsets[8];
     uint32_t fromUDynamicOffsets[8];
 
